@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>200 Recetas para Freidora de Aire</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --yellow:#ffbd00;
+      --yellow2:#ffd536;
+      --yellowDark:#eca900;
+
+      --black:#090909;
+      --black2:#151515;
+      --black3:#202020;
+
+      --white:#ffffff;
+      --cream:#fff9ee;
+
+      --green:#25b940;
+
+      --text:#151515;
+      --muted:#676767;
+
+      --radius:22px;
+      --shadow:0 18px 50px rgba(0,0,0,.16);
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:"Montserrat",sans-serif;
+      background:#fff;
+      color:var(--text);
+      line-height:1.5;
+    }
+
+    img{
+      display:block;
+      max-width:100%;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container{
+      width:min(1180px,92%);
+      margin:auto;
+    }
+
+    .section{
+      padding:72px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:clamp(28px,4vw,46px);
+      font-weight:900;
+      line-height:1.08;
+      margin-bottom:15px;
+    }
+
+    .section-title span{
+      color:var(--yellowDark);
+    }
+
+    .section-subtitle{
+      text-align:center;
+      color:var(--muted);
+      max-width:760px;
+      margin:0 auto 40px;
+      font-size:17px;
+    }
+
+    /* ==============================
+       URGENCY
+    ============================== */
+
+    .urgency{
+      background:linear-gradient(
+        90deg,
+        #ffb800,
+        #ffd231,
+        #ffb800
+      );
+      color:#000;
+      text-align:center;
+      padding:12px 15px;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    /* ==============================
+       HERO
+    ============================== */
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      color:#fff;
+      background:
+        radial-gradient(circle at 76% 30%,rgba(255,190,0,.18),transparent 30%),
+        linear-gradient(120deg,#080808,#121212);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:420px;
+      height:420px;
+      border-radius:50%;
+      background:var(--yellow);
+      filter:blur(140px);
+      opacity:.12;
+      right:-180px;
+      top:80px;
+    }
+
+    .hero-inner{
+      min-height:660px;
+      padding:70px 0 55px;
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:45px;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .hero h1{
+      font-size:clamp(38px,5vw,69px);
+      font-weight:900;
+      line-height:.98;
+      letter-spacing:-2px;
+      margin-bottom:24px;
+    }
+
+    .hero h1 .yellow{
+      color:var(--yellow);
+    }
+
+    .hero h1 .big{
+      font-size:1.22em;
+    }
+
+    .hero-subtitle{
+      font-size:18px;
+      color:#ececec;
+      max-width:620px;
+      margin-bottom:23px;
+    }
+
+    .hero-caption{
+      border:1px solid rgba(255,188,0,.65);
+      background:rgba(255,188,0,.06);
+      padding:14px 18px;
+      border-radius:12px;
+      font-size:14px;
+      max-width:570px;
+      margin-bottom:25px;
+    }
+
+    .price-line{
+      color:#fff;
+      font-size:17px;
+      margin-bottom:2px;
+    }
+
+    .old-price{
+      text-decoration:line-through;
+      color:#bbb;
+    }
+
+    .hero-price{
+      color:var(--yellow);
+      font-weight:900;
+      font-size:60px;
+      line-height:1;
+      margin-bottom:20px;
+    }
+
+    .hero-price small{
+      font-size:26px;
+      vertical-align:top;
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      border:0;
+      cursor:pointer;
+      font-family:inherit;
+      font-size:17px;
+      font-weight:900;
+      text-transform:uppercase;
+      padding:18px 30px;
+      border-radius:10px;
+      background:linear-gradient(180deg,#ffd632,#ffb800);
+      color:#111;
+      box-shadow:
+        0 10px 30px rgba(255,187,0,.24),
+        inset 0 1px rgba(255,255,255,.45);
+      transition:.2s;
+    }
+
+    .cta:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 32px rgba(255,187,0,.35);
+    }
+
+    .cta.green{
+      background:linear-gradient(180deg,#35cf55,#1faa39);
+      color:#fff;
+    }
+
+    .cta.black{
+      background:#111;
+      color:#fff;
+    }
+
+    .trust-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:16px;
+      margin-top:22px;
+      color:#eee;
+      font-size:12px;
+      font-weight:600;
+    }
+
+    .hero-product{
+      position:relative;
+      display:flex;
+      justify-content:center;
+      align-items:flex-end;
+    }
+
+    .hero-product img{
+      max-height:570px;
+      width:auto;
+      object-fit:contain;
+      filter:drop-shadow(0 25px 35px rgba(0,0,0,.55));
+    }
+
+    /* ==============================
+       BENEFITS
+    ============================== */
+
+    .benefits{
+      background:var(--cream);
+      padding:38px 0 48px;
+    }
+
+    .benefits h2{
+      text-align:center;
+      font-size:31px;
+      font-weight:900;
+      margin-bottom:30px;
+    }
+
+    .benefit-grid{
+      display:grid;
+      grid-template-columns:repeat(9,1fr);
+      gap:0;
+      margin-bottom:27px;
+    }
+
+    .benefit{
+      text-align:center;
+      padding:10px 12px;
+      border-right:1px solid #ddd6ca;
+    }
+
+    .benefit:last-child{
+      border-right:0;
+    }
+
+    .benefit-icon{
+      font-size:29px;
+      margin-bottom:8px;
+    }
+
+    .benefit p{
+      font-weight:700;
+      font-size:12px;
+      line-height:1.25;
+    }
+
+    .center{
+      text-align:center;
+    }
+
+    /* ==============================
+       INTRO OSCURA (Descubre una nueva forma)
+    ============================== */
+
+    .intro-dark{
+      position:relative;
+      overflow:hidden;
+      background:#0b0b0b;
+      color:#fff;
+    }
+
+    .intro-dark-inner{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+      padding:70px 0;
+    }
+
+    .intro-dark h2{
+      font-size:clamp(26px,3.6vw,40px);
+      font-weight:900;
+      line-height:1.15;
+      margin-bottom:18px;
+    }
+
+    .intro-dark h2 .yellow{
+      color:var(--yellow);
+    }
+
+    .intro-dark p{
+      color:#ddd;
+      font-size:16px;
+      max-width:520px;
+      margin-bottom:24px;
+    }
+
+    .intro-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .intro-tag{
+      border:1px solid rgba(255,190,0,.55);
+      background:rgba(255,190,0,.06);
+      padding:10px 14px;
+      border-radius:10px;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .intro-dark-image img{
+      border-radius:18px;
+      width:100%;
+      object-fit:cover;
+      box-shadow:var(--shadow);
+    }
+
+    /* ==============================
+       RECIPE / CATEGORY PREVIEW (5 categorías)
+    ============================== */
+
+    .recipe-preview{
+      background:#fffaf2;
+    }
+
+    .category-grid{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:14px;
+    }
+
+    .category-card{
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,.09);
+      background:#fff;
+    }
+
+    .category-card img{
+      width:100%;
+      height:150px;
+      object-fit:cover;
+    }
+
+    .category-card .label{
+      background:var(--yellow);
+      color:#111;
+      text-align:center;
+      font-weight:800;
+      font-size:13px;
+      padding:10px 6px;
+    }
+
+    /* ==============================
+       CATEGORIES + PERFECT
+    ============================== */
+
+    .two-column{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:55px;
+      align-items:center;
+    }
+
+    .category-list,
+    .check-list{
+      list-style:none;
+      margin-top:25px;
+    }
+
+    .category-list li,
+    .check-list li{
+      margin:12px 0;
+      font-weight:600;
+    }
+
+    .category-list li{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:15px;
+      padding-bottom:8px;
+      border-bottom:1px dashed #ddd;
+    }
+
+    .quantity{
+      background:var(--yellow);
+      padding:4px 9px;
+      border-radius:5px;
+      font-size:12px;
+      color:#111;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .check-list li{
+      display:flex;
+      gap:10px;
+    }
+
+    .check{
+      width:23px;
+      height:23px;
+      min-width:23px;
+      border-radius:50%;
+      background:var(--yellow);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:13px;
+      font-weight:900;
+    }
+
+    .showcase-image{
+      margin-top:20px;
+      border-radius:20px;
+      max-height:360px;
+      width:100%;
+      object-fit:cover;
+    }
+
+    /* ==============================
+       BONUSES
+    ============================== */
+
+    .bonuses{
+      background:
+        radial-gradient(circle at center top,#292929,#0b0b0b 65%);
+      color:#fff;
+    }
+
+    .bonuses .section-title{
+      color:#fff;
+    }
+
+    .bonus-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:38px;
+    }
+
+    .bonus-card{
+      background:
+        linear-gradient(180deg,#1e1e1e,#101010);
+      border:1px solid rgba(255,190,0,.65);
+      border-radius:16px;
+      padding:22px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .bonus-number{
+      display:inline-block;
+      color:var(--yellow);
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:8px;
+    }
+
+    .bonus-card h3{
+      font-size:18px;
+      font-weight:800;
+      margin-bottom:10px;
+    }
+
+    .bonus-card p{
+      color:#d1d1d1;
+      font-size:13px;
+      min-height:62px;
+    }
+
+    .bonus-value{
+      margin-top:15px;
+      font-weight:800;
+    }
+
+    .bonus-value del{
+      color:#888;
+    }
+
+    .free{
+      color:var(--yellow);
+      font-weight:900;
+    }
+
+    .bonus-total{
+      text-align:center;
+      color:#fff;
+      margin-top:28px;
+      font-size:24px;
+      font-weight:900;
+    }
+
+    .bonus-total span{
+      color:var(--yellow);
+    }
+
+    /* ==============================
+       PLANS
+    ============================== */
+
+    .plans{
+      background:#f5f5f5;
+    }
+
+    .plan-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:26px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .plan{
+      background:#fff;
+      border-radius:20px;
+      padding:32px;
+      border:2px solid #eee;
+      position:relative;
+      box-shadow:var(--shadow);
+    }
+
+    .plan.featured{
+      border:3px solid var(--yellow);
+      transform:scale(1.02);
+    }
+
+    .popular{
+      position:absolute;
+      right:20px;
+      top:-17px;
+      background:var(--yellow);
+      color:#111;
+      font-size:12px;
+      font-weight:900;
+      padding:8px 18px;
+      border-radius:20px;
+      text-transform:uppercase;
+    }
+
+    .plan-eyebrow{
+      color:#555;
+      font-size:13px;
+      font-weight:800;
+      text-transform:uppercase;
+      margin-bottom:8px;
+    }
+
+    .plan h3{
+      font-size:25px;
+      line-height:1.1;
+      margin-bottom:22px;
+    }
+
+    .plan ul{
+      list-style:none;
+      margin:20px 0;
+    }
+
+    .plan li{
+      margin:10px 0;
+      font-size:14px;
+    }
+
+    .plan li::before{
+      content:"✓";
+      color:#159a2a;
+      font-weight:900;
+      margin-right:7px;
+    }
+
+    .plan-bonus{
+      background:#fff7d7;
+      border-radius:12px;
+      padding:14px;
+      margin:15px 0;
+    }
+
+    .plan-bonus strong{
+      display:block;
+      margin-bottom:5px;
+    }
+
+    .small-price{
+      font-size:13px;
+      color:#777;
+    }
+
+    .plan-price{
+      font-size:50px;
+      font-weight:900;
+      margin:6px 0 20px;
+    }
+
+    .plan .cta{
+      width:100%;
+    }
+
+    /* ==============================
+       SOCIAL PROOF
+    ============================== */
+
+    .social-proof{
+      background:#101010;
+      color:#fff;
+    }
+
+    .rating{
+      text-align:center;
+      color:var(--yellow);
+      font-weight:800;
+      font-size:18px;
+      margin:15px 0 30px;
+    }
+
+    .testimonial-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:15px;
+    }
+
+    .testimonial{
+      background:#191919;
+      border:1px solid rgba(255,190,0,.55);
+      padding:20px;
+      border-radius:16px;
+    }
+
+    .person{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:15px;
+    }
+
+    .avatar{
+      width:52px;
+      height:52px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid var(--yellow);
+    }
+
+    .stars{
+      color:var(--yellow);
+      font-size:13px;
+      margin-bottom:10px;
+    }
+
+    .testimonial p{
+      font-size:13px;
+      color:#ddd;
+    }
+
+    .testimonial strong{
+      display:block;
+      margin-top:12px;
+      font-size:13px;
+    }
+
+    /* ==============================
+       GUARANTEE
+    ============================== */
+
+    .guarantee-receive{
+      background:#fff8ed;
+    }
+
+    .guarantee-box{
+      background:linear-gradient(150deg,#ffc522,#ffa900);
+      padding:35px;
+      border-radius:20px;
+    }
+
+    .guarantee-icon{
+      font-size:45px;
+    }
+
+    .guarantee-box h3{
+      margin:8px 0 10px;
+      font-size:27px;
+      font-weight:900;
+    }
+
+    .guarantee-box p{
+      margin-bottom:20px;
+      font-weight:600;
+    }
+
+    .receive h2{
+      font-size:36px;
+      font-weight:900;
+      margin-bottom:8px;
+    }
+
+    .receive-list{
+      margin-top:26px;
+    }
+
+    .receive-item{
+      display:flex;
+      align-items:flex-start;
+      gap:15px;
+      margin-bottom:20px;
+    }
+
+    .receive-item .icon{
+      width:48px;
+      height:48px;
+      border-radius:10px;
+      background:#111;
+      color:var(--yellow);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:23px;
+    }
+
+    /* ==============================
+       FAQ
+    ============================== */
+
+    .faq{
+      background:#fff;
+    }
+
+    .faq-wrap{
+      max-width:900px;
+      margin:auto;
+    }
+
+    details{
+      background:#fff;
+      border:1px solid #e6e6e6;
+      border-radius:13px;
+      margin-bottom:11px;
+      overflow:hidden;
+      box-shadow:0 5px 16px rgba(0,0,0,.04);
+    }
+
+    summary{
+      list-style:none;
+      cursor:pointer;
+      padding:20px 22px;
+      font-weight:800;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    summary::-webkit-details-marker{
+      display:none;
+    }
+
+    summary::after{
+      content:"+";
+      font-size:25px;
+      color:var(--yellowDark);
+      font-weight:900;
+    }
+
+    details[open] summary::after{
+      content:"−";
+    }
+
+    details p{
+      padding:0 22px 22px;
+      color:#555;
+      font-size:15px;
+    }
+
+    /* ==============================
+       FINAL CTA
+    ============================== */
+
+    .final-cta{
+      background:
+        radial-gradient(circle at 50% 0,rgba(255,193,0,.18),transparent 40%),
+        #0b0b0b;
+      color:#fff;
+      text-align:center;
+      padding:70px 20px;
+    }
+
+    .final-cta h2{
+      font-size:clamp(32px,5vw,52px);
+      line-height:1.05;
+      font-weight:900;
+      max-width:850px;
+      margin:0 auto 16px;
+    }
+
+    .final-cta h2 span{
+      color:var(--yellow);
+    }
+
+    .final-cta p{
+      color:#ddd;
+      max-width:650px;
+      margin:0 auto 28px;
+    }
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    footer{
+      background:var(--yellow);
+      color:#111;
+      padding:18px 15px;
+    }
+
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      font-size:12px;
+      font-weight:700;
+    }
+
+    /* ==============================
+       RESPONSIVE
+    ============================== */
+
+    @media(max-width:1000px){
+
+      .hero-inner{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .hero-subtitle,
+      .hero-caption{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .trust-row{
+        justify-content:center;
+      }
+
+      .hero-product{
+        order:-1;
+      }
+
+      .hero-product img{
+        max-height:420px;
+      }
+
+      .benefit-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+      }
+
+      .benefit{
+        border-right:0;
+      }
+
+      .intro-dark-inner{
+        grid-template-columns:1fr;
+      }
+
+      .intro-dark-image{
+        order:-1;
+      }
+
+      .category-grid{
+        grid-template-columns:repeat(3,1fr);
+      }
+
+      .testimonial-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .bonus-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+    }
+
+    @media(max-width:760px){
+
+      .section{
+        padding:55px 0;
+      }
+
+      .hero-inner{
+        min-height:auto;
+        padding:45px 0;
+      }
+
+      .hero h1{
+        letter-spacing:-1px;
+      }
+
+      .hero-price{
+        font-size:52px;
+      }
+
+      .benefit-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .category-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .two-column{
+        grid-template-columns:1fr;
+        gap:35px;
+      }
+
+      .bonus-grid,
+      .plan-grid,
+      .testimonial-grid{
+        grid-template-columns:1fr;
+      }
+
+      .plan.featured{
+        transform:none;
+      }
+
+      .footer-inner{
+        flex-direction:column;
+        text-align:center;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- URGENCY -->
+  <div class="urgency">
+    ⏰ La promoción de esta página termina pronto
+  </div>
+
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-inner">
+
+      <div>
+        <h1>
+          Más de <span class="yellow big">200</span><br>
+          Recetas <span class="yellow">Fáciles, Saludables y Deliciosas</span>
+          para Sacarle el Máximo Provecho a tu Freidora de Aire
+        </h1>
+
+        <p class="hero-subtitle">
+          Descubre cómo preparar platos increíbles todos los días sin perder
+          tiempo, sin usar exceso de aceite y sin ensuciar tu cocina.
+        </p>
+
+        <div class="hero-caption">
+          🍽️ Recetas dulces y saladas para variar tu menú todos los días
+          sin ensuciar tu freidora de aire
+        </div>
+
+        <div class="price-line">
+          De <span class="old-price">€20,00</span> por apenas
+        </div>
+
+        <div class="hero-price">
+          <small>€</small>6,90
+        </div>
+
+        <a href="#planes" class="cta">
+          🛒 QUIERO MIS 200 RECETAS
+        </a>
+
+        <div class="trust-row">
+          <span>📱 Acceso inmediato por email</span>
+          <span>🔒 Compra 100% segura</span>
+          <span>🛡️ Garantía de 15 días</span>
+        </div>
+      </div>
+
+      <div class="hero-product">
+        <!-- Asset real: hero_book_mockup.png -->
+        <img
+          src="assets/hero_book_mockup.png"
+          alt="200 Recetas para Freidora de Aire"
+        >
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="container">
+
+      <h2>Beneficios del Producto:</h2>
+
+      <div class="benefit-grid">
+
+        <div class="benefit">
+          <div class="benefit-icon">🍗</div>
+          <p>+200 recetas para tu freidora de aire</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">⏱️</div>
+          <p>Menos tiempo en la cocina</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">📖</div>
+          <p>Recetas simples e ilustradas</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">🍳</div>
+          <p>Desayuno, comida, cena y postres</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">💚</div>
+          <p>Más sabor sin complicaciones</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">✨</div>
+          <p>Ideas nuevas para cada día</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">👨‍👩‍👧</div>
+          <p>Recetas para toda la familia</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">📱</div>
+          <p>Acceso desde tu móvil o impreso</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">🧼</div>
+          <p>Recetas que no ensucian tu freidora</p>
+        </div>
+
+      </div>
+
+      <div class="center">
+        <a href="#planes" class="cta black">
+          🛒 Quiero mis recetas
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECCIÓN AGREGADA: Descubre una nueva forma de cocinar (faltaba en el código del GPT) -->
+  <section class="intro-dark">
+    <div class="container intro-dark-inner">
+
+      <div>
+        <h2>
+          Descubre una nueva forma de cocinar:
+          <span class="yellow">fácil, saludable y deliciosa.</span>
+        </h2>
+
+        <p>
+          Con este ebook tendrás 200 recetas creadas especialmente para tu
+          freidora de aire, con ingredientes accesibles y pasos simples
+          para que te queden perfectas.
+        </p>
+
+        <div class="intro-tags">
+          <span class="intro-tag">Ahorra tiempo en la cocina</span>
+          <span class="intro-tag">Disfruta comidas ligeras y sabrosas</span>
+          <span class="intro-tag">Ideal para cualquier ocasión</span>
+        </div>
+      </div>
+
+      <div class="intro-dark-image">
+        <!-- Asset real: airfryer_pollo_seccion_oscura.png -->
+        <img src="assets/airfryer_pollo_seccion_oscura.png" alt="Freidora de aire con pollo">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- RECIPE / CATEGORY PREVIEW (sustituye la grilla de 12 que el GPT inventó, por las 5 categorías reales de tu imagen) -->
+  <section class="section recipe-preview">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        ¿Qué encontrarás en <span>este ebook</span>?
+      </h2>
+
+      <p class="section-subtitle">
+        200 recetas organizadas para que cocinar sea más fácil que nunca.
+      </p>
+
+      <div class="category-grid">
+
+        <div class="category-card">
+          <img src="assets/carnes_aves.png" alt="Carnes y aves">
+          <div class="label">Carnes y aves</div>
+        </div>
+
+        <div class="category-card">
+          <img src="assets/pescados_mariscos.png" alt="Pescados y mariscos">
+          <div class="label">Pescados y mariscos</div>
+        </div>
+
+        <div class="category-card">
+          <img src="assets/vegetales.png" alt="Vegetales">
+          <div class="label">Vegetales</div>
+        </div>
+
+        <div class="category-card">
+          <img src="assets/snacks_entradas.png" alt="Snacks y entradas">
+          <div class="label">Snacks y entradas</div>
+        </div>
+
+        <div class="category-card">
+          <img src="assets/postres.png" alt="Postres">
+          <div class="label">Postres</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CATEGORIES + PERFECT -->
+  <section class="section">
+
+    <div class="container two-column">
+
+      <div>
+
+        <h2 class="section-title" style="text-align:left;">
+          + 188 recetas <span>increíbles más</span>
+        </h2>
+
+        <p>Divididas en categorías completas:</p>
+
+        <ul class="category-list">
+
+          <li>
+            <span>🥞 Desayunos Ligeros</span>
+            <span class="quantity">50 recetas</span>
+          </li>
+
+          <li>
+            <span>🍞 Panes, Bizcochos y Masas Sin Gluten</span>
+            <span class="quantity">55 recetas</span>
+          </li>
+
+          <li>
+            <span>🍽️ Comidas y Cenas Prácticas</span>
+            <span class="quantity">70 recetas</span>
+          </li>
+
+          <li>
+            <span>🥨 Snacks y Aperitivos Saludables</span>
+            <span class="quantity">50 recetas</span>
+          </li>
+
+          <li>
+            <span>🍰 Postres Sin Azúcar</span>
+            <span class="quantity">65 recetas</span>
+          </li>
+
+          <li>
+            <span>🥛 Recetas Sin Lactosa Cremosas</span>
+            <span class="quantity">35 recetas</span>
+          </li>
+
+          <li>
+            <span>🥣 Salsas, Cremas y Acompañamientos</span>
+            <span class="quantity">25 recetas</span>
+          </li>
+
+          <li>
+            <span>🥤 Bebidas, Batidos y Extras</span>
+            <span class="quantity">15 recetas</span>
+          </li>
+
+        </ul>
+
+        <a href="#planes" class="cta" style="margin-top:20px">
+          🛒 QUIERO TODAS LAS 200 RECETAS
+        </a>
+
+      </div>
+
+      <div>
+
+        <h2 class="section-title" style="text-align:left;">
+          Este libro es <span>perfecto para ti</span> si:
+        </h2>
+
+        <ul class="check-list">
+
+          <li><span class="check">✓</span>Tienes una freidora de aire y la usas poco</li>
+          <li><span class="check">✓</span>Siempre haces las mismas recetas</li>
+          <li><span class="check">✓</span>Quieres cocinar sin complicarte</li>
+          <li><span class="check">✓</span>Te quedas sin ideas de qué preparar</li>
+          <li><span class="check">✓</span>Buscas recetas rápidas para el día a día</li>
+          <li><span class="check">✓</span>Quieres variar sin gastar más</li>
+          <li><span class="check">✓</span>Quieres complacer a toda la familia</li>
+          <li><span class="check">✓</span>Quieres sacarle más provecho a tu freidora</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECCIÓN AGREGADA: ¿Por qué cocinar en Air Fryer? (faltaba en el código del GPT) -->
+  <section class="section" style="background:var(--cream);">
+
+    <div class="container two-column">
+
+      <div>
+        <!-- Asset real: airfryer_papas_seccion_beneficios.png -->
+        <img
+          class="showcase-image"
+          src="assets/airfryer_papas_seccion_beneficios.png"
+          alt="Freidora de aire con papas"
+          style="margin-top:0;"
+        >
+      </div>
+
+      <div>
+
+        <h2 class="section-title" style="text-align:left;">
+          ¿Por qué cocinar en <span>Air Fryer</span>?
+        </h2>
+
+        <ul class="check-list">
+          <li><span class="check">✓</span>Usa hasta 90% menos aceite</li>
+          <li><span class="check">✓</span>Cocina más rápido y sin complicaciones</li>
+          <li><span class="check">✓</span>Fácil de limpiar y súper práctica</li>
+          <li><span class="check">✓</span>Conserva el sabor y la textura de los alimentos</li>
+          <li><span class="check">✓</span>Ideal para una alimentación más saludable</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BONUSES -->
+  <section class="section bonuses">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        🎁 Regalo Especial — COMPRA AHORA Y RECIBE
+        <span>+6 bonos exclusivos</span>
+      </h2>
+
+      <div class="bonus-grid">
+
+        <article class="bonus-card">
+          <span class="bonus-number">BONO 1</span>
+
+          <h3>Lista de Compras Inteligente</h3>
+
+          <p>
+            4 semanas organizadas para ahorrar tiempo y dinero
+            en el supermercado.
+          </p>
+
+          <div class="bonus-value">
+            <del>€8,90</del>
+            →
+            <span class="free">✓ Gratis Hoy</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BONO 2</span>
+
+          <h3>Menú Completo de 30 Días en Freidora de Aire</h3>
+
+          <p>
+            Plan completo con comidas, cenas, snacks y postres
+            para nunca quedarte sin ideas.
+          </p>
+
+          <div class="bonus-value">
+            <del>€14,90</del>
+            →
+            <span class="free">✓ Gratis Hoy</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BONO 3</span>
+
+          <h3>Guía de Congelación y Recalentado</h3>
+
+          <p>
+            Cómo congelar y recalentar manteniendo sabor,
+            textura y practicidad.
+          </p>
+
+          <div class="bonus-value">
+            <del>€7,90</del>
+            →
+            <span class="free">✓ Gratis Hoy</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BONO 4</span>
+
+          <h3>30 Condimentos y Salsas para Variar el Sabor</h3>
+
+          <p>
+            Combinaciones prácticas para transformar tus
+            recetas en la freidora de aire.
+          </p>
+
+          <div class="bonus-value">
+            <del>€6,90</del>
+            →
+            <span class="free">✓ Gratis Hoy</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BONO 5</span>
+
+          <h3>50 Recetas Listas en 15 Minutos</h3>
+
+          <p>
+            Recetas rápidas, sabrosas y fáciles para tu
+            rutina diaria.
+          </p>
+
+          <div class="bonus-value">
+            <del>€9,90</del>
+            →
+            <span class="free">✓ Gratis Hoy</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BONO 6</span>
+
+          <h3>+40 Cenas Románticas para Parejas</h3>
+
+          <p>
+            Recetas sofisticadas y fáciles para sorprender
+            a quien amas.
+          </p>
+
+          <div class="bonus-value">
+            <del>€8,90</del>
+            →
+            <span class="free">✓ Gratis Hoy</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="bonus-total">
+        💚 VALOR TOTAL DE LOS BONOS →
+        <span>¡TODO GRATIS HOY!</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PLANS -->
+  <section class="section plans" id="planes">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Elige tu <span>plan</span>
+      </h2>
+
+      <p class="section-subtitle">
+        Oferta especial por tiempo limitado · Acceso inmediato
+      </p>
+
+      <div class="plan-grid">
+
+        <!-- PLAN 1 -->
+        <article class="plan">
+
+          <div class="plan-eyebrow">
+            ⚡ Oferta Básica
+          </div>
+
+          <h3>
+            +200 Recetas para Freidora de Aire
+          </h3>
+
+          <ul>
+            <li>200 Recetas Deliciosas para Freidora de Aire</li>
+            <li>Recetas que no ensucian tu freidora</li>
+            <li>Acceso de por vida</li>
+            <li>Entrega inmediata por correo</li>
+          </ul>
+
+          <div class="small-price">
+            De <del>€20,00</del> por apenas
+          </div>
+
+          <div class="plan-price">
+            €6,90
+          </div>
+
+          <!-- TROCAR LINK -->
+          <a href="SEU-LINK-DE-CHECKOUT-AQUI" class="cta">
+            🛒 Comprar Ahora
+          </a>
+
+        </article>
+
+
+        <!-- PLAN 2 -->
+        <article class="plan featured">
+
+          <div class="popular">
+            MÁS VENDIDA
+          </div>
+
+          <div class="plan-eyebrow">
+            🔥 Súper Oferta
+          </div>
+
+          <h3>
+            +200 Recetas Premium + 6 Bonos
+          </h3>
+
+          <ul>
+            <li>200 Recetas Deliciosas para Freidora de Aire</li>
+            <li>Desayuno, comida, cena y postres</li>
+            <li>Recetas para toda la familia</li>
+            <li>Recetas que no ensucian tu freidora</li>
+            <li>Acceso de por vida</li>
+            <li>Entrega inmediata por correo</li>
+          </ul>
+
+          <div class="plan-bonus">
+
+            <strong>
+              Bonos exclusivos incluidos:
+            </strong>
+
+            🎁 Lista de Compras Inteligente<br>
+            🎁 Menú Completo de 30 Días<br>
+            🎁 Guía de Congelación y Recalentado<br>
+            🎁 30 Condimentos y Salsas<br>
+            🎁 50 Recetas en 15 Minutos<br>
+            🎁 +40 Cenas Románticas para Parejas
+
+          </div>
+
+          <div class="small-price">
+            De <del>€45,00</del> por apenas
+          </div>
+
+          <div class="plan-price">
+            €9,90
+          </div>
+
+          <!-- TROCAR LINK -->
+          <a href="SEU-LINK-DE-CHECKOUT-AQUI" class="cta">
+            🛒 Comprar Ahora
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SOCIAL PROOF (3 testimonios con los avatares reales extraídos de tu imagen) -->
+  <section class="section social-proof">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        MÁS DE 3.500 PERSONAS YA TRANSFORMARON
+        SU RUTINA EN LA COCINA
+      </h2>
+
+      <div class="rating">
+        4.9 ★★★★★ (3.541 valoraciones)
+      </div>
+
+      <div class="testimonial-grid">
+
+        <article class="testimonial">
+
+          <div class="person">
+            <img src="assets/avatar_carla.png" class="avatar" alt="Carla M.">
+            <strong>Carla M.</strong>
+          </div>
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            "Las recetas son fáciles, rápidas y deliciosas. Mi freidora de
+            aire no para de trabajar."
+          </p>
+
+        </article>
+
+
+        <article class="testimonial">
+
+          <div class="person">
+            <img src="assets/avatar_diego.png" class="avatar" alt="Diego R.">
+            <strong>Diego R.</strong>
+          </div>
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            "Perfecto para quienes tenemos poco tiempo pero no queremos
+            comer siempre lo mismo."
+          </p>
+
+        </article>
+
+
+        <article class="testimonial">
+
+          <div class="person">
+            <img src="assets/avatar_mariana.png" class="avatar" alt="Mariana L.">
+            <strong>Mariana L.</strong>
+          </div>
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            "Me encantó la variedad de recetas, hasta los postres quedan
+            espectaculares."
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- GUARANTEE + DELIVERY -->
+  <section class="section guarantee-receive">
+
+    <div class="container two-column">
+
+      <div class="guarantee-box">
+
+        <div class="guarantee-icon">
+          🛡️
+        </div>
+
+        <strong>Riesgo Cero</strong>
+
+        <h3>
+          Garantía Incondicional de 15 Días
+        </h3>
+
+        <p>
+          Prueba las recetas durante 15 días.
+          Si no quedas 100% satisfecha, te devolvemos todo
+          tu dinero, sin preguntas.
+        </p>
+
+        <a href="#planes" class="cta black">
+          Quiero comprar con seguridad
+        </a>
+
+      </div>
+
+
+      <div class="receive">
+
+        <h2>
+          Cómo vas a RECIBIR:
+        </h2>
+
+        <p>
+          Acceso liberado al instante ✨
+        </p>
+
+        <div class="receive-list">
+
+          <div class="receive-item">
+
+            <div class="icon">
+              📱
+            </div>
+
+            <div>
+              <strong>En el móvil</strong>
+              <p>Accede donde estés</p>
+            </div>
+
+          </div>
+
+
+          <div class="receive-item">
+
+            <div class="icon">
+              💻
+            </div>
+
+            <div>
+              <strong>En el ordenador</strong>
+              <p>Pantalla grande para cocinar</p>
+            </div>
+
+          </div>
+
+
+          <div class="receive-item">
+
+            <div class="icon">
+              🖨️
+            </div>
+
+            <div>
+              <strong>Para imprimir</strong>
+              <p>Tu cuaderno de recetas</p>
+            </div>
+
+          </div>
+
+
+          <div class="receive-item">
+
+            <div class="icon">
+              ⚡
+            </div>
+
+            <div>
+              <strong>Envío inmediato</strong>
+              <p>Liberado en segundos</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="section faq">
+
+    <div class="container faq-wrap">
+
+      <h2 class="section-title">
+        Preguntas <span>Frecuentes</span>
+      </h2>
+
+
+      <details>
+        <summary>¿Las recetas quedan realmente ricas?</summary>
+
+        <p>
+          Sí. Las recetas fueron pensadas especialmente para la freidora
+          de aire, manteniendo sabor, textura crujiente y aspecto
+          irresistible, sin necesitar mucho aceite.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>¿Funciona en cualquier modelo de freidora de aire?</summary>
+
+        <p>
+          Sí. Las recetas funcionan en cualquier modelo, sin importar la
+          marca o capacidad. Solo ajusta el tiempo y la temperatura si es
+          necesario.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>¿Necesito comprar ingredientes caros o difíciles de encontrar?</summary>
+
+        <p>
+          No. La mayoría de las recetas usa ingredientes accesibles y
+          fáciles de encontrar en cualquier supermercado.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>¿Las recetas sirven para toda la familia?</summary>
+
+        <p>
+          Sí. Son recetas dulces y saladas pensadas para gustar a adultos
+          y niños, con opciones para desayuno, comida, cena, snacks y
+          postres.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>¿Son recetas fáciles de hacer?</summary>
+
+        <p>
+          Sí. El material está hecho para el día a día, con pasos claros,
+          ingredientes organizados y preparación fácil de seguir.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>¿Necesito saber cocinar para aprovecharlo?</summary>
+
+        <p>
+          No. Incluso quien tiene poca práctica puede seguir las recetas,
+          porque el contenido es simple y pensado para principiantes.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>¿Las recetas ensucian mucho la freidora?</summary>
+
+        <p>
+          No. Fueron seleccionadas recetas prácticas que ayudan a mantener
+          tu freidora limpia.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>¿Cómo voy a recibir el producto?</summary>
+
+        <p>
+          Después de la compra, recibes el acceso inmediatamente en tu
+          correo. Puedes abrirlo desde el móvil, ordenador, tablet o
+          imprimirlo.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>¿Y si no me gusta?</summary>
+
+        <p>
+          Tienes 15 días de garantía incondicional. Si no quedas
+          satisfecha, solo pide el reembolso dentro del plazo.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>¿Por cuánto tiempo tengo acceso?</summary>
+
+        <p>
+          El acceso es de por vida. Compras una vez y puedes consultar
+          las recetas cuando quieras.
+        </p>
+      </details>
+
+    </div>
+  </section>
+
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+
+    <h2>
+      Transforma tu freidora de aire en
+      <span>tu mejor aliada en la cocina</span>
+    </h2>
+
+    <p>
+      Más de 200 recetas fáciles, rápidas y deliciosas para
+      descubrir nuevas comidas todos los días.
+    </p>
+
+    <a href="#planes" class="cta">
+      🛒 QUIERO MIS 200 RECETAS
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        🍳 +200 Recetas para Freidora de Aire
+      </div>
+
+      <div>
+        © 2026 Todos los derechos reservados.
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
