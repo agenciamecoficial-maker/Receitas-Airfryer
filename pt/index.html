@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '37726710246976337');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=37726710246976337&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <title>200 Receitas para Air Fryer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --yellow:#ffbd00;
+      --yellow2:#ffd536;
+      --yellowDark:#eca900;
+
+      --black:#090909;
+      --black2:#151515;
+      --black3:#202020;
+
+      --white:#ffffff;
+      --cream:#fff9ee;
+
+      --green:#25b940;
+
+      --text:#151515;
+      --muted:#676767;
+
+      --radius:22px;
+      --shadow:0 18px 50px rgba(0,0,0,.16);
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:"Montserrat",sans-serif;
+      background:#fff;
+      color:var(--text);
+      line-height:1.5;
+    }
+
+    img{
+      display:block;
+      max-width:100%;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container{
+      width:min(1180px,92%);
+      margin:auto;
+    }
+
+    .section{
+      padding:72px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:clamp(28px,4vw,46px);
+      font-weight:900;
+      line-height:1.08;
+      margin-bottom:15px;
+    }
+
+    .section-title span{
+      color:var(--yellowDark);
+    }
+
+    .section-subtitle{
+      text-align:center;
+      color:var(--muted);
+      max-width:760px;
+      margin:0 auto 40px;
+      font-size:17px;
+    }
+
+    /* ==============================
+       URGENCY
+    ============================== */
+
+    .urgency{
+      background:linear-gradient(
+        90deg,
+        #ffb800,
+        #ffd231,
+        #ffb800
+      );
+      color:#000;
+      text-align:center;
+      padding:12px 15px;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    /* ==============================
+       HERO
+    ============================== */
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      color:#fff;
+      background:
+        radial-gradient(circle at 76% 30%,rgba(255,190,0,.18),transparent 30%),
+        linear-gradient(120deg,#080808,#121212);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:420px;
+      height:420px;
+      border-radius:50%;
+      background:var(--yellow);
+      filter:blur(140px);
+      opacity:.12;
+      right:-180px;
+      top:80px;
+    }
+
+    .hero-inner{
+      min-height:660px;
+      padding:70px 0 55px;
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:45px;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .hero h1{
+      font-size:clamp(38px,5vw,69px);
+      font-weight:900;
+      line-height:.98;
+      letter-spacing:-2px;
+      margin-bottom:24px;
+    }
+
+    .hero h1 .yellow{
+      color:var(--yellow);
+    }
+
+    .hero h1 .big{
+      font-size:1.22em;
+    }
+
+    .hero-subtitle{
+      font-size:18px;
+      color:#ececec;
+      max-width:620px;
+      margin-bottom:23px;
+    }
+
+    .hero-caption{
+      border:1px solid rgba(255,188,0,.65);
+      background:rgba(255,188,0,.06);
+      padding:14px 18px;
+      border-radius:12px;
+      font-size:14px;
+      max-width:570px;
+      margin-bottom:25px;
+    }
+
+    .price-line{
+      color:#fff;
+      font-size:17px;
+      margin-bottom:2px;
+    }
+
+    .old-price{
+      text-decoration:line-through;
+      color:#bbb;
+    }
+
+    .hero-price{
+      color:var(--yellow);
+      font-weight:900;
+      font-size:60px;
+      line-height:1;
+      margin-bottom:20px;
+    }
+
+    .hero-price small{
+      font-size:26px;
+      vertical-align:top;
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      border:0;
+      cursor:pointer;
+      font-family:inherit;
+      font-size:17px;
+      font-weight:900;
+      text-transform:uppercase;
+      padding:18px 30px;
+      border-radius:10px;
+      background:linear-gradient(180deg,#ffd632,#ffb800);
+      color:#111;
+      box-shadow:
+        0 10px 30px rgba(255,187,0,.24),
+        inset 0 1px rgba(255,255,255,.45);
+      transition:.2s;
+    }
+
+    .cta:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 32px rgba(255,187,0,.35);
+    }
+
+    .cta.green{
+      background:linear-gradient(180deg,#35cf55,#1faa39);
+      color:#fff;
+    }
+
+    .cta.black{
+      background:#111;
+      color:#fff;
+    }
+
+    .trust-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:16px;
+      margin-top:22px;
+      color:#eee;
+      font-size:12px;
+      font-weight:600;
+    }
+
+    .hero-product{
+      position:relative;
+      display:flex;
+      justify-content:center;
+      align-items:flex-end;
+    }
+
+    .hero-product img{
+      max-height:570px;
+      width:auto;
+      object-fit:contain;
+      filter:drop-shadow(0 25px 35px rgba(0,0,0,.55));
+    }
+
+    /* ==============================
+       BENEFITS
+    ============================== */
+
+    .benefits{
+      background:var(--cream);
+      padding:38px 0 48px;
+    }
+
+    .benefits h2{
+      text-align:center;
+      font-size:31px;
+      font-weight:900;
+      margin-bottom:30px;
+    }
+
+    .benefit-grid{
+      display:grid;
+      grid-template-columns:repeat(9,1fr);
+      gap:0;
+      margin-bottom:27px;
+    }
+
+    .benefit{
+      text-align:center;
+      padding:10px 12px;
+      border-right:1px solid #ddd6ca;
+    }
+
+    .benefit:last-child{
+      border-right:0;
+    }
+
+    .benefit-icon{
+      font-size:29px;
+      margin-bottom:8px;
+    }
+
+    .benefit p{
+      font-weight:700;
+      font-size:12px;
+      line-height:1.25;
+    }
+
+    .center{
+      text-align:center;
+    }
+
+    /* ==============================
+       INTRO ESCURA (Descubra uma nova forma)
+    ============================== */
+
+    .intro-dark{
+      position:relative;
+      overflow:hidden;
+      background:#0b0b0b;
+      color:#fff;
+    }
+
+    .intro-dark-inner{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+      padding:70px 0;
+    }
+
+    .intro-dark h2{
+      font-size:clamp(26px,3.6vw,40px);
+      font-weight:900;
+      line-height:1.15;
+      margin-bottom:18px;
+    }
+
+    .intro-dark h2 .yellow{
+      color:var(--yellow);
+    }
+
+    .intro-dark p{
+      color:#ddd;
+      font-size:16px;
+      max-width:520px;
+      margin-bottom:24px;
+    }
+
+    .intro-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .intro-tag{
+      border:1px solid rgba(255,190,0,.55);
+      background:rgba(255,190,0,.06);
+      padding:10px 14px;
+      border-radius:10px;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .intro-dark-image img{
+      border-radius:18px;
+      width:100%;
+      object-fit:cover;
+      box-shadow:var(--shadow);
+    }
+
+    /* ==============================
+       RECIPE / CATEGORY PREVIEW (5 categorias)
+    ============================== */
+
+    .recipe-preview{
+      background:#fffaf2;
+    }
+
+    .category-grid{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:14px;
+    }
+
+    .category-card{
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,.09);
+      background:#fff;
+    }
+
+    .category-card img{
+      width:100%;
+      height:150px;
+      object-fit:cover;
+    }
+
+    .category-card .label{
+      background:var(--yellow);
+      color:#111;
+      text-align:center;
+      font-weight:800;
+      font-size:13px;
+      padding:10px 6px;
+    }
+
+    /* ==============================
+       CATEGORIES + PERFECT
+    ============================== */
+
+    .two-column{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:55px;
+      align-items:center;
+    }
+
+    .category-list,
+    .check-list{
+      list-style:none;
+      margin-top:25px;
+    }
+
+    .category-list li,
+    .check-list li{
+      margin:12px 0;
+      font-weight:600;
+    }
+
+    .category-list li{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:15px;
+      padding-bottom:8px;
+      border-bottom:1px dashed #ddd;
+    }
+
+    .quantity{
+      background:var(--yellow);
+      padding:4px 9px;
+      border-radius:5px;
+      font-size:12px;
+      color:#111;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .check-list li{
+      display:flex;
+      gap:10px;
+    }
+
+    .check{
+      width:23px;
+      height:23px;
+      min-width:23px;
+      border-radius:50%;
+      background:var(--yellow);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:13px;
+      font-weight:900;
+    }
+
+    .showcase-image{
+      margin-top:20px;
+      border-radius:20px;
+      max-height:360px;
+      width:100%;
+      object-fit:cover;
+    }
+
+    /* ==============================
+       BONUSES
+    ============================== */
+
+    .bonuses{
+      background:
+        radial-gradient(circle at center top,#292929,#0b0b0b 65%);
+      color:#fff;
+    }
+
+    .bonuses .section-title{
+      color:#fff;
+    }
+
+    .bonus-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:38px;
+    }
+
+    .bonus-card{
+      background:
+        linear-gradient(180deg,#1e1e1e,#101010);
+      border:1px solid rgba(255,190,0,.65);
+      border-radius:16px;
+      padding:22px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .bonus-number{
+      display:inline-block;
+      color:var(--yellow);
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:8px;
+    }
+
+    .bonus-card h3{
+      font-size:18px;
+      font-weight:800;
+      margin-bottom:10px;
+    }
+
+    .bonus-card p{
+      color:#d1d1d1;
+      font-size:13px;
+      min-height:62px;
+    }
+
+    .bonus-value{
+      margin-top:15px;
+      font-weight:800;
+    }
+
+    .bonus-value del{
+      color:#888;
+    }
+
+    .free{
+      color:var(--yellow);
+      font-weight:900;
+    }
+
+    .bonus-total{
+      text-align:center;
+      color:#fff;
+      margin-top:28px;
+      font-size:24px;
+      font-weight:900;
+    }
+
+    .bonus-total span{
+      color:var(--yellow);
+    }
+
+    /* ==============================
+       PLANS
+    ============================== */
+
+    .plans{
+      background:#f5f5f5;
+    }
+
+    .plan-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:26px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .plan{
+      background:#fff;
+      border-radius:20px;
+      padding:32px;
+      border:2px solid #eee;
+      position:relative;
+      box-shadow:var(--shadow);
+    }
+
+    .plan.featured{
+      border:3px solid var(--yellow);
+      transform:scale(1.02);
+    }
+
+    .popular{
+      position:absolute;
+      right:20px;
+      top:-17px;
+      background:var(--yellow);
+      color:#111;
+      font-size:12px;
+      font-weight:900;
+      padding:8px 18px;
+      border-radius:20px;
+      text-transform:uppercase;
+    }
+
+    .plan-eyebrow{
+      color:#555;
+      font-size:13px;
+      font-weight:800;
+      text-transform:uppercase;
+      margin-bottom:8px;
+    }
+
+    .plan h3{
+      font-size:25px;
+      line-height:1.1;
+      margin-bottom:22px;
+    }
+
+    .plan ul{
+      list-style:none;
+      margin:20px 0;
+    }
+
+    .plan li{
+      margin:10px 0;
+      font-size:14px;
+    }
+
+    .plan li::before{
+      content:"✓";
+      color:#159a2a;
+      font-weight:900;
+      margin-right:7px;
+    }
+
+    .plan-bonus{
+      background:#fff7d7;
+      border-radius:12px;
+      padding:14px;
+      margin:15px 0;
+    }
+
+    .plan-bonus strong{
+      display:block;
+      margin-bottom:5px;
+    }
+
+    .small-price{
+      font-size:13px;
+      color:#777;
+    }
+
+    .plan-price{
+      font-size:50px;
+      font-weight:900;
+      margin:6px 0 20px;
+    }
+
+    .plan .cta{
+      width:100%;
+    }
+
+    /* ==============================
+       SOCIAL PROOF
+    ============================== */
+
+    .social-proof{
+      background:#101010;
+      color:#fff;
+    }
+
+    .rating{
+      text-align:center;
+      color:var(--yellow);
+      font-weight:800;
+      font-size:18px;
+      margin:15px 0 30px;
+    }
+
+    .testimonial-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:15px;
+    }
+
+    .testimonial{
+      background:#191919;
+      border:1px solid rgba(255,190,0,.55);
+      padding:20px;
+      border-radius:16px;
+    }
+
+    .person{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:15px;
+    }
+
+    .avatar{
+      width:52px;
+      height:52px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid var(--yellow);
+    }
+
+    .stars{
+      color:var(--yellow);
+      font-size:13px;
+      margin-bottom:10px;
+    }
+
+    .testimonial p{
+      font-size:13px;
+      color:#ddd;
+    }
+
+    .testimonial strong{
+      display:block;
+      margin-top:12px;
+      font-size:13px;
+    }
+
+    /* ==============================
+       GUARANTEE
+    ============================== */
+
+    .guarantee-receive{
+      background:#fff8ed;
+    }
+
+    .guarantee-box{
+      background:linear-gradient(150deg,#ffc522,#ffa900);
+      padding:35px;
+      border-radius:20px;
+    }
+
+    .guarantee-icon{
+      font-size:45px;
+    }
+
+    .guarantee-box h3{
+      margin:8px 0 10px;
+      font-size:27px;
+      font-weight:900;
+    }
+
+    .guarantee-box p{
+      margin-bottom:20px;
+      font-weight:600;
+    }
+
+    .receive h2{
+      font-size:36px;
+      font-weight:900;
+      margin-bottom:8px;
+    }
+
+    .receive-list{
+      margin-top:26px;
+    }
+
+    .receive-item{
+      display:flex;
+      align-items:flex-start;
+      gap:15px;
+      margin-bottom:20px;
+    }
+
+    .receive-item .icon{
+      width:48px;
+      height:48px;
+      border-radius:10px;
+      background:#111;
+      color:var(--yellow);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:23px;
+    }
+
+    /* ==============================
+       FAQ
+    ============================== */
+
+    .faq{
+      background:#fff;
+    }
+
+    .faq-wrap{
+      max-width:900px;
+      margin:auto;
+    }
+
+    details{
+      background:#fff;
+      border:1px solid #e6e6e6;
+      border-radius:13px;
+      margin-bottom:11px;
+      overflow:hidden;
+      box-shadow:0 5px 16px rgba(0,0,0,.04);
+    }
+
+    summary{
+      list-style:none;
+      cursor:pointer;
+      padding:20px 22px;
+      font-weight:800;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    summary::-webkit-details-marker{
+      display:none;
+    }
+
+    summary::after{
+      content:"+";
+      font-size:25px;
+      color:var(--yellowDark);
+      font-weight:900;
+    }
+
+    details[open] summary::after{
+      content:"−";
+    }
+
+    details p{
+      padding:0 22px 22px;
+      color:#555;
+      font-size:15px;
+    }
+
+    /* ==============================
+       FINAL CTA
+    ============================== */
+
+    .final-cta{
+      background:
+        radial-gradient(circle at 50% 0,rgba(255,193,0,.18),transparent 40%),
+        #0b0b0b;
+      color:#fff;
+      text-align:center;
+      padding:70px 20px;
+    }
+
+    .final-cta h2{
+      font-size:clamp(32px,5vw,52px);
+      line-height:1.05;
+      font-weight:900;
+      max-width:850px;
+      margin:0 auto 16px;
+    }
+
+    .final-cta h2 span{
+      color:var(--yellow);
+    }
+
+    .final-cta p{
+      color:#ddd;
+      max-width:650px;
+      margin:0 auto 28px;
+    }
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    footer{
+      background:var(--yellow);
+      color:#111;
+      padding:18px 15px;
+    }
+
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      font-size:12px;
+      font-weight:700;
+    }
+
+    /* ==============================
+       RESPONSIVE
+    ============================== */
+
+    @media(max-width:1000px){
+
+      .hero-inner{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .hero-subtitle,
+      .hero-caption{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .trust-row{
+        justify-content:center;
+      }
+
+      .hero-product{
+        order:-1;
+      }
+
+      .hero-product img{
+        max-height:420px;
+      }
+
+      .benefit-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+      }
+
+      .benefit{
+        border-right:0;
+      }
+
+      .intro-dark-inner{
+        grid-template-columns:1fr;
+      }
+
+      .intro-dark-image{
+        order:-1;
+      }
+
+      .category-grid{
+        grid-template-columns:repeat(3,1fr);
+      }
+
+      .testimonial-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .bonus-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+    }
+
+    @media(max-width:760px){
+
+      .section{
+        padding:55px 0;
+      }
+
+      .hero-inner{
+        min-height:auto;
+        padding:45px 0;
+      }
+
+      .hero h1{
+        letter-spacing:-1px;
+      }
+
+      .hero-price{
+        font-size:52px;
+      }
+
+      .benefit-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .category-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .two-column{
+        grid-template-columns:1fr;
+        gap:35px;
+      }
+
+      .bonus-grid,
+      .plan-grid,
+      .testimonial-grid{
+        grid-template-columns:1fr;
+      }
+
+      .plan.featured{
+        transform:none;
+      }
+
+      .footer-inner{
+        flex-direction:column;
+        text-align:center;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- URGENCY -->
+  <div class="urgency">
+    ⏰ A promoção desta página termina em breve
+  </div>
+
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-inner">
+
+      <div>
+        <h1>
+          Mais de <span class="yellow big">200</span><br>
+          Receitas <span class="yellow">Fáceis, Saudáveis e Deliciosas</span>
+          para Tirar o Máximo Proveito da sua Air Fryer
+        </h1>
+
+        <p class="hero-subtitle">
+          Descubra como preparar pratos incríveis todos os dias sem perder
+          tempo, sem usar excesso de óleo e sem sujar sua cozinha.
+        </p>
+
+        <div class="hero-caption">
+          🍽️ Receitas doces e salgadas para variar seu cardápio todos os dias
+          sem sujar sua air fryer
+        </div>
+
+        <div class="price-line">
+          De <span class="old-price">R$20,00</span> por apenas
+        </div>
+
+        <div class="hero-price">
+          <small>R$</small>6,90
+        </div>
+
+        <a href="#planos" class="cta">
+          🛒 QUERO MINHAS 200 RECEITAS
+        </a>
+
+        <div class="trust-row">
+          <span>📱 Acesso imediato por e-mail</span>
+          <span>🔒 Compra 100% segura</span>
+          <span>🛡️ Garantia de 15 dias</span>
+        </div>
+      </div>
+
+      <div class="hero-product">
+        <!-- Asset real: hero_book_mockup.png -->
+        <img
+          src="assets/hero_book_mockup.png"
+          alt="200 Receitas para Air Fryer"
+        >
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="container">
+
+      <h2>Benefícios do Produto:</h2>
+
+      <div class="benefit-grid">
+
+        <div class="benefit">
+          <div class="benefit-icon">🍗</div>
+          <p>+200 receitas para sua air fryer</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">⏱️</div>
+          <p>Menos tempo na cozinha</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">📖</div>
+          <p>Receitas simples e ilustradas</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">🍳</div>
+          <p>Café da manhã, almoço, jantar e sobremesas</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">💚</div>
+          <p>Mais sabor sem complicação</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">✨</div>
+          <p>Ideias novas para cada dia</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">👨‍👩‍👧</div>
+          <p>Receitas para toda a família</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">📱</div>
+          <p>Acesso pelo celular ou impresso</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">🧼</div>
+          <p>Receitas que não sujam sua air fryer</p>
+        </div>
+
+      </div>
+
+      <div class="center">
+        <a href="#planos" class="cta black">
+          🛒 Quero minhas receitas
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SEÇÃO: Descubra uma nova forma de cozinhar -->
+  <section class="intro-dark">
+    <div class="container intro-dark-inner">
+
+      <div>
+        <h2>
+          Descubra uma nova forma de cozinhar:
+          <span class="yellow">fácil, saudável e deliciosa.</span>
+        </h2>
+
+        <p>
+          Com este ebook você vai ter 200 receitas criadas especialmente
+          para sua air fryer, com ingredientes acessíveis e passos simples
+          para que fiquem perfeitas.
+        </p>
+
+        <div class="intro-tags">
+          <span class="intro-tag">Economize tempo na cozinha</span>
+          <span class="intro-tag">Aproveite refeições leves e saborosas</span>
+          <span class="intro-tag">Ideal para qualquer ocasião</span>
+        </div>
+      </div>
+
+      <div class="intro-dark-image">
+        <!-- Asset real: airfryer_pollo_seccion_oscura.png -->
+        <img src="assets/airfryer_pollo_seccion_oscura.png" alt="Air Fryer com frango">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- RECIPE / CATEGORY PREVIEW -->
+  <section class="section recipe-preview">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        O que você vai encontrar <span>neste ebook</span>?
+      </h2>
+
+      <p class="section-subtitle">
+        200 receitas organizadas para que cozinhar seja mais fácil do que nunca.
+      </p>
+
+      <div class="category-grid">
+
+        <div class="category-card">
+          <img src="assets/carnes_aves.png" alt="Carnes e aves">
+          <div class="label">Carnes e aves</div>
+        </div>
+
+        <div class="category-card">
+          <img src="assets/pescados_mariscos.png" alt="Peixes e frutos do mar">
+          <div class="label">Peixes e frutos do mar</div>
+        </div>
+
+        <div class="category-card">
+          <img src="assets/vegetales.png" alt="Vegetais">
+          <div class="label">Vegetais</div>
+        </div>
+
+        <div class="category-card">
+          <img src="assets/snacks_entradas.png" alt="Lanches e entradas">
+          <div class="label">Lanches e entradas</div>
+        </div>
+
+        <div class="category-card">
+          <img src="assets/postres.png" alt="Sobremesas">
+          <div class="label">Sobremesas</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CATEGORIES + PERFECT -->
+  <section class="section">
+
+    <div class="container two-column">
+
+      <div>
+
+        <h2 class="section-title" style="text-align:left;">
+          + 188 receitas <span>incríveis a mais</span>
+        </h2>
+
+        <p>Divididas em categorias completas:</p>
+
+        <ul class="category-list">
+
+          <li>
+            <span>🥞 Cafés da Manhã Leves</span>
+            <span class="quantity">50 receitas</span>
+          </li>
+
+          <li>
+            <span>🍞 Pães, Bolos e Massas Sem Glúten</span>
+            <span class="quantity">55 receitas</span>
+          </li>
+
+          <li>
+            <span>🍽️ Almoços e Jantares Práticos</span>
+            <span class="quantity">70 receitas</span>
+          </li>
+
+          <li>
+            <span>🥨 Lanches e Aperitivos Saudáveis</span>
+            <span class="quantity">50 receitas</span>
+          </li>
+
+          <li>
+            <span>🍰 Sobremesas Sem Açúcar</span>
+            <span class="quantity">65 receitas</span>
+          </li>
+
+          <li>
+            <span>🥛 Receitas Sem Lactose Cremosas</span>
+            <span class="quantity">35 receitas</span>
+          </li>
+
+          <li>
+            <span>🥣 Molhos, Cremes e Acompanhamentos</span>
+            <span class="quantity">25 receitas</span>
+          </li>
+
+          <li>
+            <span>🥤 Bebidas, Vitaminas e Extras</span>
+            <span class="quantity">15 receitas</span>
+          </li>
+
+        </ul>
+
+        <a href="#planos" class="cta" style="margin-top:20px">
+          🛒 QUERO TODAS AS 200 RECEITAS
+        </a>
+
+      </div>
+
+      <div>
+
+        <h2 class="section-title" style="text-align:left;">
+          Este livro é <span>perfeito para você</span> se:
+        </h2>
+
+        <ul class="check-list">
+
+          <li><span class="check">✓</span>Você tem uma air fryer e usa pouco</li>
+          <li><span class="check">✓</span>Sempre faz as mesmas receitas</li>
+          <li><span class="check">✓</span>Quer cozinhar sem complicação</li>
+          <li><span class="check">✓</span>Fica sem ideias do que preparar</li>
+          <li><span class="check">✓</span>Busca receitas rápidas para o dia a dia</li>
+          <li><span class="check">✓</span>Quer variar sem gastar mais</li>
+          <li><span class="check">✓</span>Quer agradar toda a família</li>
+          <li><span class="check">✓</span>Quer tirar mais proveito da sua air fryer</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SEÇÃO: Por que cozinhar em Air Fryer? -->
+  <section class="section" style="background:var(--cream);">
+
+    <div class="container two-column">
+
+      <div>
+        <!-- Asset real: airfryer_papas_seccion_beneficios.png -->
+        <img
+          class="showcase-image"
+          src="assets/airfryer_papas_seccion_beneficios.png"
+          alt="Air Fryer com batatas"
+          style="margin-top:0;"
+        >
+      </div>
+
+      <div>
+
+        <h2 class="section-title" style="text-align:left;">
+          Por que cozinhar na <span>Air Fryer</span>?
+        </h2>
+
+        <ul class="check-list">
+          <li><span class="check">✓</span>Usa até 90% menos óleo</li>
+          <li><span class="check">✓</span>Cozinha mais rápido e sem complicação</li>
+          <li><span class="check">✓</span>Fácil de limpar e super prática</li>
+          <li><span class="check">✓</span>Preserva o sabor e a textura dos alimentos</li>
+          <li><span class="check">✓</span>Ideal para uma alimentação mais saudável</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BONUSES -->
+  <section class="section bonuses">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        🎁 Presente Especial — COMPRE AGORA E RECEBA
+        <span>+6 bônus exclusivos</span>
+      </h2>
+
+      <div class="bonus-grid">
+
+        <article class="bonus-card">
+          <span class="bonus-number">BÔNUS 1</span>
+
+          <h3>Lista de Compras Inteligente</h3>
+
+          <p>
+            4 semanas organizadas para economizar tempo e dinheiro
+            no supermercado.
+          </p>
+
+          <div class="bonus-value">
+            <del>R$8,90</del>
+            →
+            <span class="free">✓ Grátis Hoje</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BÔNUS 2</span>
+
+          <h3>Cardápio Completo de 30 Dias na Air Fryer</h3>
+
+          <p>
+            Plano completo com almoços, jantares, lanches e sobremesas
+            para você nunca ficar sem ideias.
+          </p>
+
+          <div class="bonus-value">
+            <del>R$14,90</del>
+            →
+            <span class="free">✓ Grátis Hoje</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BÔNUS 3</span>
+
+          <h3>Guia de Congelamento e Reaquecimento</h3>
+
+          <p>
+            Como congelar e reaquecer mantendo sabor,
+            textura e praticidade.
+          </p>
+
+          <div class="bonus-value">
+            <del>R$7,90</del>
+            →
+            <span class="free">✓ Grátis Hoje</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BÔNUS 4</span>
+
+          <h3>30 Temperos e Molhos para Variar o Sabor</h3>
+
+          <p>
+            Combinações práticas para transformar suas
+            receitas na air fryer.
+          </p>
+
+          <div class="bonus-value">
+            <del>R$6,90</del>
+            →
+            <span class="free">✓ Grátis Hoje</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BÔNUS 5</span>
+
+          <h3>50 Receitas Prontas em 15 Minutos</h3>
+
+          <p>
+            Receitas rápidas, saborosas e fáceis para sua
+            rotina diária.
+          </p>
+
+          <div class="bonus-value">
+            <del>R$9,90</del>
+            →
+            <span class="free">✓ Grátis Hoje</span>
+          </div>
+        </article>
+
+
+        <article class="bonus-card">
+          <span class="bonus-number">BÔNUS 6</span>
+
+          <h3>+40 Jantares Românticos para Casais</h3>
+
+          <p>
+            Receitas sofisticadas e fáceis para surpreender
+            quem você ama.
+          </p>
+
+          <div class="bonus-value">
+            <del>R$8,90</del>
+            →
+            <span class="free">✓ Grátis Hoje</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="bonus-total">
+        💚 VALOR TOTAL DOS BÔNUS →
+        <span>TUDO GRÁTIS HOJE!</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PLANS -->
+  <section class="section plans" id="planos">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Escolha seu <span>plano</span>
+      </h2>
+
+      <p class="section-subtitle">
+        Oferta especial por tempo limitado · Acesso imediato
+      </p>
+
+      <div class="plan-grid">
+
+        <!-- PLAN 1 -->
+        <article class="plan">
+
+          <div class="plan-eyebrow">
+            ⚡ Oferta Básica
+          </div>
+
+          <h3>
+            +200 Receitas para Air Fryer
+          </h3>
+
+          <ul>
+            <li>200 Receitas Deliciosas para Air Fryer</li>
+            <li>Receitas que não sujam sua air fryer</li>
+            <li>Acesso vitalício</li>
+            <li>Entrega imediata por e-mail</li>
+          </ul>
+
+          <div class="small-price">
+            De <del>R$20,00</del> por apenas
+          </div>
+
+          <div class="plan-price">
+            R$6,90
+          </div>
+
+          <!-- TROCAR LINK -->
+          <a href="SEU-LINK-DE-CHECKOUT-AQUI" class="cta">
+            🛒 Comprar Agora
+          </a>
+
+        </article>
+
+
+        <!-- PLAN 2 -->
+        <article class="plan featured">
+
+          <div class="popular">
+            MAIS VENDIDO
+          </div>
+
+          <div class="plan-eyebrow">
+            🔥 Super Oferta
+          </div>
+
+          <h3>
+            +200 Receitas Premium + 6 Bônus
+          </h3>
+
+          <ul>
+            <li>200 Receitas Deliciosas para Air Fryer</li>
+            <li>Café da manhã, almoço, jantar e sobremesas</li>
+            <li>Receitas para toda a família</li>
+            <li>Receitas que não sujam sua air fryer</li>
+            <li>Acesso vitalício</li>
+            <li>Entrega imediata por e-mail</li>
+          </ul>
+
+          <div class="plan-bonus">
+
+            <strong>
+              Bônus exclusivos incluídos:
+            </strong>
+
+            🎁 Lista de Compras Inteligente<br>
+            🎁 Cardápio Completo de 30 Dias<br>
+            🎁 Guia de Congelamento e Reaquecimento<br>
+            🎁 30 Temperos e Molhos<br>
+            🎁 50 Receitas em 15 Minutos<br>
+            🎁 +40 Jantares Românticos para Casais
+
+          </div>
+
+          <div class="small-price">
+            De <del>R$45,00</del> por apenas
+          </div>
+
+          <div class="plan-price">
+            R$9,90
+          </div>
+
+          <!-- TROCAR LINK -->
+          <a href="SEU-LINK-DE-CHECKOUT-AQUI" class="cta">
+            🛒 Comprar Agora
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SOCIAL PROOF -->
+  <section class="section social-proof">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        MAIS DE 3.500 PESSOAS JÁ TRANSFORMARAM
+        SUA ROTINA NA COZINHA
+      </h2>
+
+      <div class="rating">
+        4.9 ★★★★★ (3.541 avaliações)
+      </div>
+
+      <div class="testimonial-grid">
+
+        <article class="testimonial">
+
+          <div class="person">
+            <img src="assets/avatar_carla.png" class="avatar" alt="Carla M.">
+            <strong>Carla M.</strong>
+          </div>
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            "As receitas são fáceis, rápidas e deliciosas. Minha air fryer
+            não para de trabalhar."
+          </p>
+
+        </article>
+
+
+        <article class="testimonial">
+
+          <div class="person">
+            <img src="assets/avatar_diego.png" class="avatar" alt="Diego R.">
+            <strong>Diego R.</strong>
+          </div>
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            "Perfeito para quem tem pouco tempo mas não quer comer
+            sempre a mesma coisa."
+          </p>
+
+        </article>
+
+
+        <article class="testimonial">
+
+          <div class="person">
+            <img src="assets/avatar_mariana.png" class="avatar" alt="Mariana L.">
+            <strong>Mariana L.</strong>
+          </div>
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            "Adorei a variedade de receitas, até as sobremesas ficam
+            espetaculares."
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- GUARANTEE + DELIVERY -->
+  <section class="section guarantee-receive">
+
+    <div class="container two-column">
+
+      <div class="guarantee-box">
+
+        <div class="guarantee-icon">
+          🛡️
+        </div>
+
+        <strong>Risco Zero</strong>
+
+        <h3>
+          Garantia Incondicional de 15 Dias
+        </h3>
+
+        <p>
+          Experimente as receitas por 15 dias.
+          Se você não ficar 100% satisfeita, devolvemos todo
+          o seu dinheiro, sem perguntas.
+        </p>
+
+        <a href="#planos" class="cta black">
+          Quero comprar com segurança
+        </a>
+
+      </div>
+
+
+      <div class="receive">
+
+        <h2>
+          Como você vai RECEBER:
+        </h2>
+
+        <p>
+          Acesso liberado na hora ✨
+        </p>
+
+        <div class="receive-list">
+
+          <div class="receive-item">
+
+            <div class="icon">
+              📱
+            </div>
+
+            <div>
+              <strong>No celular</strong>
+              <p>Acesse onde estiver</p>
+            </div>
+
+          </div>
+
+
+          <div class="receive-item">
+
+            <div class="icon">
+              💻
+            </div>
+
+            <div>
+              <strong>No computador</strong>
+              <p>Tela grande para cozinhar</p>
+            </div>
+
+          </div>
+
+
+          <div class="receive-item">
+
+            <div class="icon">
+              🖨️
+            </div>
+
+            <div>
+              <strong>Para imprimir</strong>
+              <p>Seu caderno de receitas</p>
+            </div>
+
+          </div>
+
+
+          <div class="receive-item">
+
+            <div class="icon">
+              ⚡
+            </div>
+
+            <div>
+              <strong>Envio imediato</strong>
+              <p>Liberado em segundos</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="section faq">
+
+    <div class="container faq-wrap">
+
+      <h2 class="section-title">
+        Perguntas <span>Frequentes</span>
+      </h2>
+
+
+      <details>
+        <summary>As receitas ficam realmente gostosas?</summary>
+
+        <p>
+          Sim. As receitas foram pensadas especialmente para a air fryer,
+          mantendo sabor, textura crocante e aparência irresistível,
+          sem precisar de muito óleo.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Funciona em qualquer modelo de air fryer?</summary>
+
+        <p>
+          Sim. As receitas funcionam em qualquer modelo, independente da
+          marca ou capacidade. Só ajuste o tempo e a temperatura se
+          necessário.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Preciso comprar ingredientes caros ou difíceis de encontrar?</summary>
+
+        <p>
+          Não. A maioria das receitas usa ingredientes acessíveis e
+          fáceis de encontrar em qualquer supermercado.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>As receitas servem para toda a família?</summary>
+
+        <p>
+          Sim. São receitas doces e salgadas pensadas para agradar
+          adultos e crianças, com opções para café da manhã, almoço,
+          jantar, lanches e sobremesas.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>São receitas fáceis de fazer?</summary>
+
+        <p>
+          Sim. O material foi feito para o dia a dia, com passos claros,
+          ingredientes organizados e preparo fácil de seguir.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Preciso saber cozinhar para aproveitar?</summary>
+
+        <p>
+          Não. Até quem tem pouca prática consegue seguir as receitas,
+          porque o conteúdo é simples e pensado para iniciantes.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>As receitas sujam muito a air fryer?</summary>
+
+        <p>
+          Não. Foram selecionadas receitas práticas que ajudam a manter
+          sua air fryer limpa.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Como vou receber o produto?</summary>
+
+        <p>
+          Depois da compra, você recebe o acesso imediatamente no seu
+          e-mail. Pode abrir pelo celular, computador, tablet ou
+          imprimir.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>E se eu não gostar?</summary>
+
+        <p>
+          Você tem 15 dias de garantia incondicional. Se não ficar
+          satisfeita, é só pedir o reembolso dentro do prazo.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Por quanto tempo tenho acesso?</summary>
+
+        <p>
+          O acesso é vitalício. Você compra uma vez e pode consultar
+          as receitas quando quiser.
+        </p>
+      </details>
+
+    </div>
+  </section>
+
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+
+    <h2>
+      Transforme sua air fryer em
+      <span>sua melhor aliada na cozinha</span>
+    </h2>
+
+    <p>
+      Mais de 200 receitas fáceis, rápidas e deliciosas para
+      descobrir novas comidas todos os dias.
+    </p>
+
+    <a href="#planos" class="cta">
+      🛒 QUERO MINHAS 200 RECEITAS
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        🍳 +200 Receitas para Air Fryer
+      </div>
+
+      <div>
+        © 2026 Todos os direitos reservados.
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
