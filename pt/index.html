@@ -422,6 +422,33 @@
     }
 
     /* ==============================
+       RECIPE SHOWCASE (algumas receitas)
+    ============================== */
+
+    .recipe-showcase{
+      background:#fff;
+    }
+
+    .showcase-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .showcase-card{
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      aspect-ratio:1/1;
+    }
+
+    .showcase-card img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    /* ==============================
        CATEGORIES + PERFECT
     ============================== */
 
@@ -941,6 +968,10 @@
         grid-template-columns:repeat(3,1fr);
       }
 
+      .showcase-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
       .testimonial-grid{
         grid-template-columns:repeat(2,1fr);
       }
@@ -976,6 +1007,11 @@
 
       .category-grid{
         grid-template-columns:repeat(2,1fr);
+      }
+
+      .showcase-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
       }
 
       .two-column{
@@ -1197,6 +1233,47 @@
         <div class="category-card">
           <img src="assets/postres.png" alt="Sobremesas">
           <div class="label">Sobremesas</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- RECIPE SHOWCASE (algumas receitas) -->
+  <section class="section recipe-showcase">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Algumas <span>Receitas que você vai aprender</span>
+      </h2>
+
+      <div class="showcase-grid">
+
+        <div class="showcase-card">
+          <img src="assets/01.png" alt="Coxinha da Asa com Barbecue">
+        </div>
+
+        <div class="showcase-card">
+          <img src="assets/02.png" alt="Mini Lanche de Peito de Peru Recheado">
+        </div>
+
+        <div class="showcase-card">
+          <img src="assets/03.png" alt="Rocambole Recheado">
+        </div>
+
+        <div class="showcase-card">
+          <img src="assets/04.png" alt="Banana com Aveia e Canela">
+        </div>
+
+        <div class="showcase-card">
+          <img src="assets/05.png" alt="Croissant Recheado">
+        </div>
+
+        <div class="showcase-card">
+          <img src="assets/06.png" alt="Frango Crocante com Páprica">
         </div>
 
       </div>
