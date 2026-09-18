@@ -713,47 +713,20 @@
 
     .testimonial-grid{
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+      grid-template-columns:repeat(4,1fr);
       gap:15px;
     }
 
-    .testimonial{
-      background:#191919;
-      border:1px solid rgba(255,190,0,.55);
-      padding:20px;
+    .testimonial-shot{
       border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:var(--shadow);
     }
 
-    .person{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      margin-bottom:15px;
-    }
-
-    .avatar{
-      width:52px;
-      height:52px;
-      border-radius:50%;
-      object-fit:cover;
-      border:2px solid var(--yellow);
-    }
-
-    .stars{
-      color:var(--yellow);
-      font-size:13px;
-      margin-bottom:10px;
-    }
-
-    .testimonial p{
-      font-size:13px;
-      color:#ddd;
-    }
-
-    .testimonial strong{
+    .testimonial-shot img{
+      width:100%;
       display:block;
-      margin-top:12px;
-      font-size:13px;
     }
 
     /* ==============================
@@ -1653,55 +1626,21 @@
 
       <div class="testimonial-grid">
 
-        <article class="testimonial">
+        <div class="testimonial-shot">
+          <img src="assets/depoimento_marina.png" alt="Depoimento de Marina C.">
+        </div>
 
-          <div class="person">
-            <img src="assets/avatar_carla.png" class="avatar" alt="Carla M.">
-            <strong>Carla M.</strong>
-          </div>
+        <div class="testimonial-shot">
+          <img src="assets/depoimento_carolina.png" alt="Depoimento de Carolina M.">
+        </div>
 
-          <div class="stars">★★★★★</div>
+        <div class="testimonial-shot">
+          <img src="assets/depoimento_carlos.png" alt="Depoimento de Carlos G.">
+        </div>
 
-          <p>
-            "As receitas são fáceis, rápidas e deliciosas. Minha air fryer
-            não para de trabalhar."
-          </p>
-
-        </article>
-
-
-        <article class="testimonial">
-
-          <div class="person">
-            <img src="assets/avatar_diego.png" class="avatar" alt="Diego R.">
-            <strong>Diego R.</strong>
-          </div>
-
-          <div class="stars">★★★★★</div>
-
-          <p>
-            "Perfeito para quem tem pouco tempo mas não quer comer
-            sempre a mesma coisa."
-          </p>
-
-        </article>
-
-
-        <article class="testimonial">
-
-          <div class="person">
-            <img src="assets/avatar_mariana.png" class="avatar" alt="Mariana L.">
-            <strong>Mariana L.</strong>
-          </div>
-
-          <div class="stars">★★★★★</div>
-
-          <p>
-            "Adorei a variedade de receitas, até as sobremesas ficam
-            espetaculares."
-          </p>
-
-        </article>
+        <div class="testimonial-shot">
+          <img src="assets/depoimento_renata.png" alt="Depoimento de Renata L.">
+        </div>
 
       </div>
 
